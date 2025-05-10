@@ -1,0 +1,15 @@
+.first-pg{background: rgb(209, 209, 209);
+width: 700px;
+height: 700px;
+text-align: center;
+position: relative;
+bottom: 720px;
+}
+
+.quizz-pg{width: 700px;
+height: 700px;
+background: rgb(241, 241, 241);}
+
+input{width: auto;
+height: 20px;
+background: khaki;}
