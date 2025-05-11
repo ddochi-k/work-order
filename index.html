@@ -1,117 +1,112 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>JavaScript Sandbox</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>난센스 퀴즈 이벤트</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-  <div class="quizz-pg" id="quizz-pg">
-
-    <div class="quizz-first">
-    <p>12356을 다른말로 하면?</p>
-    <div class="firstQ">
-<label><input type="radio" id="q1-1" name="q1" value="q1"/>사 빠짐</label>
-<label><input type="radio" id="q1-2" name="q1" value="q1"/>숫자</label>
-<label><input type="radio" id="q1-3" name="q1" value="q1"/>사도세자</label>
-<label><input type="radio" id="q1-4" name="q1" value="q1"/>사가 없음</label>
-</div>
-</div>
-
-<div class="quizz-second">
-    <p>수제비를 손으로 만드는 이유는?</p>
-    <div class="seconQ">
-<label><input type="radio" id="q2-1" name="q2" value="q1"/>발로 만드면 족제비라서</label>
-<label><input type="radio" id="q2-2" name="q2" value="q1"/>발로 만드면 더러워서</label>
-<label><input type="radio" id="q2-3" name="q2" value="q1"/>손이 제일 편해서</label>
-<label><input type="radio" id="q2-4" name="q2" value="q1"/>手제비라</label>
-</div>
-</div>
-
-<div class="quizz-third">
-    <p>맥주가 죽으면 하는 말은?</p>
-    <div class="thirdQ">
-    <label><input type="radio" id="q3-1" name="q3" value="q1"/>다잉메세지</label>
-    <label><input type="radio" id="q3-2" name="q3" value="q1"/>유언</label>
-    <label><input type="radio" id="q3-3" name="q3" value="q1"/>유언비어</label>
-    <label><input type="radio" id="q3-4" name="q3" value="q1"/>유서</label>
-</div>
-</div>
-
-<div class="quizz-fourth">
-    <p>세종대왕이 자기소개를 하면?</p>
-    <div class="fourthQ">
-    <label><input type="radio" id="q4-1" name="q4" value="q1"/>세종대왕입니다</label>
-    <label><input type="radio" id="q4-2" name="q4" value="q1"/>난이도</label>
-    <label><input type="radio" id="q4-3" name="q4" value="q1"/>왕은 직접 자신을 소개할 필요 없다</label>
-    <label><input type="radio" id="q4-4" name="q4" value="q1"/>왕이다</label>
-</div>
-</div>
-
-<div class="quizz-fifth">
-    <p>차 문을 세게 닫으면 안 되는 이유는?</p>
-    <div class="fifthQ">
-<label><input type="radio" id="q5-1" name="q5" value="q1"/>차가 약해서서</label>
-<label><input type="radio" id="q5-2" name="q5" value="q1"/>차문이 네 개라서</label>
-<label><input type="radio" id="q5-3" name="q5" value="q1"/>고장나서</label>
-<label><input type="radio" id="q5-4" name="q5" value="q1"/>차가 흔들려서</label>
-</div>
-</div>
-
-<button type="submit" id="submit-btn">제출</button>
-
-</div>
-
-<div class="cost" id="cost">
-<p id="result-text"></p>
-<button>다시풀기</button>
-</div>
-
-
-
-    <div class="first-pg" id="first-pg">
+  <div class="first-pg" id="first-pg">
     <h1>난센스 퀴즈 응모 이벤트</h1>
     <button id="start-btn">시작</button>
+  </div>
+
+ <div class="quizz-pg" id="quizz-pg">
+  <div class="quizz-block">
+    <p>1. 12356을 다른 말로 하면?</p>
+    <input type="radio" name="q1" id="q1-1" value="q1-1" />
+    <label for="q1-1">사 빠짐</label>
+
+    <input type="radio" name="q1" id="q1-2" value="q1-2" />
+    <label for="q1-2">숫자</label>
+
+    <input type="radio" name="q1" id="q1-3" value="q1-3" />
+    <label for="q1-3">사도세자</label>
+
+    <input type="radio" name="q1" id="q1-4" value="q1-4" />
+    <label for="q1-4">사가 없음</label>
+  </div>
+
+  <div class="quizz-block">
+    <p>2. 수제비를 손으로 만드는 이유는?</p>
+    <input type="radio" name="q2" id="q2-1" value="q2-1" />
+    <label for="q2-1">발로 만들면 족제비라서</label>
+
+    <input type="radio" name="q2" id="q2-2" value="q2-2" />
+    <label for="q2-2">발로 만들면 더러워서</label>
+
+    <input type="radio" name="q2" id="q2-3" value="q2-3" />
+    <label for="q2-3">손이 제일 편해서</label>
+
+    <input type="radio" name="q2" id="q2-4" value="q2-4" />
+    <label for="q2-4">手제비라서</label>
+  </div>
+
+  <div class="quizz-block">
+    <p>3. 맥주가 죽으면 하는 말은?</p>
+    <input type="radio" name="q3" id="q3-1" value="q3-1" />
+    <label for="q3-1">다잉메세지</label>
+
+    <input type="radio" name="q3" id="q3-2" value="q3-2" />
+    <label for="q3-2">유언</label>
+
+    <input type="radio" name="q3" id="q3-3" value="q3-3" />
+    <label for="q3-3">유언비어</label>
+
+    <input type="radio" name="q3" id="q3-4" value="q3-4" />
+    <label for="q3-4">유서</label>
+  </div>
+
+  <div class="quizz-block">
+    <p>4. 세종대왕이 자기소개를 하면?</p>
+    <input type="radio" name="q4" id="q4-1" value="q4-1" />
+    <label for="q4-1">세종대왕입니다</label>
+
+    <input type="radio" name="q4" id="q4-2" value="q4-2" />
+    <label for="q4-2">난이도</label>
+
+    <input type="radio" name="q4" id="q4-3" value="q4-3" />
+    <label for="q4-3">왕은 스스로 소개하지 않는다</label>
+
+    <input type="radio" name="q4" id="q4-4" value="q4-4" />
+    <label for="q4-4">왕이다</label>
+  </div>
+
+  <div class="quizz-block">
+    <p>5. 차 문을 세게 닫으면 안 되는 이유는?</p>
+    <input type="radio" name="q5" id="q5-1" value="q5-1" />
+    <label for="q5-1">차가 약해서</label>
+
+    <input type="radio" name="q5" id="q5-2" value="q5-2" />
+    <label for="q5-2">차문이 네 개라서</label>
+
+    <input type="radio" name="q5" id="q5-3" value="q5-3" />
+    <label for="q5-3">고장 나서</label>
+
+    <input type="radio" name="q5" id="q5-4" value="q5-4" />
+    <label for="q5-4">차가 흔들려서</label>
+  </div>
+
+  <button id="submit-btn">제출</button>
+</div>
+
+  <div class="modal" id="result-modal">
+  <div class="modal-content">
+    <div id="score"></div>
+    <button id="retry-btn" style="display: none;">다시하기</button>
+    <form id="apply-form" style="display: none;">
+      <input type="text" id="name" placeholder="이름" required />
+      <input type="email" id="email" placeholder="이메일" required />
+      <input type="tel" id="phone" placeholder="전화번호" required />
+      <button type="submit" id="apply-btn">응모하기</button>
+      <div class="msg" id="msg"></div>
+    </form>
+  </div>
 </div>
 
 
-<div class="point" id="point">
-
-
-</div>
-    <!-- ■ 과제명
-실버세대를 위한 퀴즈 이벤트 웹페이지 제작
-─────────────────────────────────────────────
-■ 제작 요구사항
-단일 HTML 파일 기반 원 페이지 웹앱
-메뉴바 및 멀티페이지 없지만 모달창 존재
-─────────────────────────────────────────────
-■ 필수 포함 요소
-① 퀴즈 영역
-5~10문제 객관식 퀴즈 (라디오 버튼)
-한 화면에 모든 문제 표시
-사용자 정답 선택 후 “결과 보기” 버튼 클릭
-점수 및 결과 메시지는 모달창(Popup)으로 표시
-점수 애니메이션 효과 포함 (예: 숫자 올라가는 효과)
-모달창이 점수가 표현 되고 몇 초 후 경품 응모 폼으로 변함
-② 경품 응모 폼
-이름, 이메일, 전화번호 입력란
-JavaScript로 입력값 유효성 검사 (빈칸, 이메일 형식 등)
-“응모하기” 버튼 클릭 시 성공 또는 경고 메시지 출력
-③ 디자인 및 반응형
-PC, 태블릿, 모바일에서 잘 보이는 반응형 디자인
-큰 글씨(폰트 18px 이상), 큼직한 버튼
-고대비 명확한 색상
-─────────────────────────────────────────────
-■ 기술적 구현 요소
-CSS: 반응형, 폰트 확대, 모달창 애니메이션 (@keyframes 또는 transition)
-JavaScript:
-• 퀴즈 문제 배열 처리
-• 점수 계산
-• 모달창 띄우기
-• 응모 폼 유효성 검사 -->
-
-    <script src="./index.js" type="module"></script>
-  </body>
+  <script src="index.js" type="module"></script>
+</body>
 </html>
