@@ -78,9 +78,9 @@ retryBtn.addEventListener("click", () => {
 
 form.addEventListener("submit", e => {
   e.preventDefault();
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   if (!name || !email || !phone) {
@@ -92,5 +92,6 @@ form.addEventListener("submit", e => {
   } else {
     msg.style.color = "green";
     msg.textContent = "응모가 완료되었습니다. 감사합니다!";
+    msg.style.fontSize = "18px";
   }
 });
